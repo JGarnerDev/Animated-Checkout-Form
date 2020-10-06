@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/29fec4c397.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form>
+      <div id="brand">
+        <h1>DUNDER</h1>
+        <h1>MIFFLIN,</h1>
+        <h2>INC</h2>
+        <h3>PAPER COMPANY</h3>
+      </div>
+      <ul id="progressbar">
+        <li>
+          <i class="fas fa-truck"></i>
+          <p>Shipping</p>
+        </li>
+        <li>
+          <i class="fas fa-credit-card"></i>
+          <p>Payment</p>
+        </li>
+      </ul>
+      <fieldset>
+        <label for="Name on Card">Full Name</label>
+        <input
+          type="text"
+          placeholder="Michael Scott"
+          onfocus="this.placeholder = ''"
+        />
+        <label for="Card Number">Address</label>
+        <input
+          type="text"
+          placeholder="123 Crescent, Montreal"
+          onfocus="this.placeholder = ''"
+        />
+        <label for="CVV">State/Province</label>
+        <input type="text" placeholder="QC" onfocus="this.placeholder = ''" />
+        <label for="Expiration Date">Telephone Number</label>
+        <input
+          type="text"
+          placeholder="111 222 3333"
+          onfocus="this.placeholder = ''"
+        />
+        <button id="next">CONFIRM ADDRESS</button>
+      </fieldset>
+      <fieldset>
+        <label for="Name on Card">Name On Card</label>
+        <input
+          type="text"
+          placeholder="Michael Scott"
+          onfocus="this.placeholder = ''"
+        />
+        <label for="Card Number">Card Number</label>
+        <input
+          type="text"
+          placeholder="9876 5432 1098 7654"
+          onfocus="this.placeholder = ''"
+        />
+        <label for="CVV">CVV</label>
+        <input type="text" placeholder="404" onfocus="this.placeholder = ''" />
+        <label for="Expiration Date">Expiration Date</label>
+        <input
+          type="text"
+          placeholder="12 / 21"
+          onfocus="this.placeholder = ''"
+        />
+        <label for="Zip Code">Zip Code</label>
+        <input
+          type="text"
+          placeholder="50023"
+          onfocus="this.placeholder = ''"
+        />
+        <button id="done">REVIEW YOUR ORDER</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
