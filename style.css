@@ -36,13 +36,14 @@
 html,
 body {
   height: 100%;
+  overflow-y: hidden;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(1, 91, 151, 0.5), rgba(119, 120, 182, 0.5));
+  background: linear-gradient(#fec542, #baa35e);
 }
 
 form {
@@ -53,15 +54,17 @@ form {
   width: 230px;
   border-radius: 10px;
   padding: 26px;
-
   background: white;
+  box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.8);
 }
 
 fieldset {
   border: 0;
+  position: relative;
+  max-width: 178px;
 }
 
-fieldset:not(:last-of-type) {
+fieldset:not(:first-of-type) {
   display: none;
 }
 fieldset:first-of-type button {
@@ -203,7 +206,8 @@ label {
   color: rgb(218, 218, 218);
 }
 
-button {
+button,
+#thankyou {
   min-height: 52px;
   width: 100%;
   margin-top: 20px;
@@ -216,4 +220,29 @@ button {
 
 button:focus {
   outline: none;
+}
+
+#thankyou {
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+  background: rgb(107, 146, 107);
+  position: relative;
+  bottom: -240px;
+  opacity: 0;
+  font-size: 30px;
+}
+
+#progressbar li.active > * {
+  animation: progress 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes progress {
+  0% {
+    color: rgb(218, 218, 218);
+  }
+  100% {
+    color: rgb(74, 153, 74);
+  }
 }

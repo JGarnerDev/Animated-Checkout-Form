@@ -11,6 +11,10 @@
       src="https://kit.fontawesome.com/29fec4c397.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    <script src="./index.js"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -31,58 +35,31 @@
           <p>Payment</p>
         </li>
       </ul>
-      <fieldset>
+      <fieldset id="fs1">
         <label for="Name on Card">Full Name</label>
-        <input
-          type="text"
-          placeholder="Michael Scott"
-          onfocus="this.placeholder = ''"
-        />
+        <input type="text" />
         <label for="Card Number">Address</label>
-        <input
-          type="text"
-          placeholder="123 Crescent, Montreal"
-          onfocus="this.placeholder = ''"
-        />
+        <input type="text" />
         <label for="CVV">State/Province</label>
-        <input type="text" placeholder="QC" onfocus="this.placeholder = ''" />
+        <input type="text" />
         <label for="Expiration Date">Telephone Number</label>
-        <input
-          type="text"
-          placeholder="111 222 3333"
-          onfocus="this.placeholder = ''"
-        />
+        <input type="text" />
         <button id="next">CONFIRM ADDRESS</button>
       </fieldset>
-      <fieldset>
+      <fieldset id="fs2">
         <label for="Name on Card">Name On Card</label>
-        <input
-          type="text"
-          placeholder="Michael Scott"
-          onfocus="this.placeholder = ''"
-        />
+        <input type="text" />
         <label for="Card Number">Card Number</label>
-        <input
-          type="text"
-          placeholder="9876 5432 1098 7654"
-          onfocus="this.placeholder = ''"
-        />
+        <input type="text" />
         <label for="CVV">CVV</label>
-        <input type="text" placeholder="404" onfocus="this.placeholder = ''" />
+        <input type="text" />
         <label for="Expiration Date">Expiration Date</label>
-        <input
-          type="text"
-          placeholder="12 / 21"
-          onfocus="this.placeholder = ''"
-        />
+        <input type="text" />
         <label for="Zip Code">Zip Code</label>
-        <input
-          type="text"
-          placeholder="50023"
-          onfocus="this.placeholder = ''"
-        />
+        <input type="text" />
         <button id="done">REVIEW YOUR ORDER</button>
       </fieldset>
+      <div id="thankyou">Thank you!</div>
     </form>
   </body>
 </html>
