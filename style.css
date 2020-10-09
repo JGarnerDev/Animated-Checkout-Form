@@ -261,8 +261,8 @@ ul li.active > * {
   animation: slide-in-bottom 2s cubic-bezier(0.19, 1, 0.22, 1) both;
 }
 .appear {
-  -webkit-animation: appear 2s cubic-bezier(0.19, 1, 0.22, 1) both;
-  animation: appear 2s cubic-bezier(0.19, 1, 0.22, 1) both;
+  -webkit-animation: appear 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation: appear 1s cubic-bezier(0.19, 1, 0.22, 1) both;
 }
 
 /* animations */
@@ -391,8 +391,8 @@ ul li.active > * {
 
 @-webkit-keyframes appear {
   0% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
     opacity: 0;
   }
   100% {
@@ -403,8 +403,8 @@ ul li.active > * {
 }
 @keyframes appear {
   0% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
     opacity: 0;
   }
   100% {
