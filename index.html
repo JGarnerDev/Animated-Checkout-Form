@@ -13,19 +13,18 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
-    <script src="./index.js"></script>
+
+    <script src="./main.js"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <form>
-      <div id="brand">
-        <h1>DUNDER</h1>
-        <h1>MIFFLIN,</h1>
-        <h2>INC</h2>
-        <h3>PAPER COMPANY</h3>
+      <div>
+        <h1>JONES</h1>
+        <h1>LOGISTICS</h1>
+        <h2>SUPPLY DONE RIGHT</h2>
       </div>
-      <ul id="progressbar">
+      <ul>
         <li>
           <i class="fas fa-truck"></i>
           <p>Shipping</p>
@@ -35,7 +34,7 @@
           <p>Payment</p>
         </li>
       </ul>
-      <fieldset id="fs1">
+      <fieldset id="shipping">
         <label for="Name on Card">Full Name</label>
         <input type="text" />
         <label for="Card Number">Address</label>
@@ -44,9 +43,9 @@
         <input type="text" />
         <label for="Expiration Date">Telephone Number</label>
         <input type="text" />
-        <button id="next">CONFIRM ADDRESS</button>
+        <button id="next">CONFIRM SHIPPING</button>
       </fieldset>
-      <fieldset id="fs2">
+      <fieldset id="payment">
         <label for="Name on Card">Name On Card</label>
         <input type="text" />
         <label for="Card Number">Card Number</label>
@@ -57,9 +56,17 @@
         <input type="text" />
         <label for="Zip Code">Zip Code</label>
         <input type="text" />
-        <button id="done">REVIEW YOUR ORDER</button>
+
+        <div id="button-container">
+          <button id="revise">REVISE SHIPPING</button>
+          <button id="done">CONFIRM ORDER</button>
+        </div>
       </fieldset>
-      <div id="thankyou">Thank you!</div>
+      <div id="thankyou">
+        <i class="fas fa-check-circle fa-3x"></i>
+        <p>Thank you!</p>
+        <button id="revise">REDO</button>
+      </div>
     </form>
   </body>
 </html>
